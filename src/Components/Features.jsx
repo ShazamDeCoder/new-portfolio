@@ -2,29 +2,29 @@ import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 const Features = () => {
-    const items = [
+  const items = [
     {
       id: 1,
-      image: "/images/first-sales-1.svg",
+      image: `${import.meta.env.BASE_URL}images/first-sales-1.svg`,
       title: "Try The App",
       desc: "Discover the best restaurants and vendors near you all in one place",
     },
     {
       id: 2,
-      image: "/images/first-sales-2.svg",
+      image: `${import.meta.env.BASE_URL}images/first-sales-2.svg`,
       title: "Become A Merchant",
       desc: "Grow your business and increase profit by creating an online ordering page",
     },
     {
       id: 3,
-      image: "/images/first-sales-3.svg",
+      image: `${import.meta.env.BASE_URL}images/first-sales-3.svg`,
       title: "Become A Rider",
       desc: "Drive, deliver and earn. Make more money when you become a rider on Heyfood",
     },
   ];
+
   return (
-    <div>
-      <section className="w-full py-16 px-6 md:px-16 bg-white">
+    <section className="w-full py-16 px-6 md:px-16 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {items.map((item) => (
           <div
@@ -42,7 +42,7 @@ const Features = () => {
             <h3 className="text-3xl font-bold mb-2">{item.title}</h3>
 
             {/* Description */}
-            <p className="text-3xl-gray-600 mb-4 ">{item.desc}</p>
+            <p className="text-gray-600 mb-4">{item.desc}</p>
 
             {/* Get Started Link */}
             <button className="flex items-center text-2xl text-[#0fa205] font-bold hover:underline">
@@ -52,8 +52,7 @@ const Features = () => {
         ))}
       </div>
     </section>
-    </div>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

@@ -31,7 +31,7 @@ const Hero = () => {
       {/* Right Side */}
       <div className="flex flex-col items-center">
         <img
-          src="/images/hero-side.svg"
+          src={`${process.env.PUBLIC_URL}/images/hero-side.svg`}
           alt="Food Delivery"
           className="w-[260px] sm:w-[320px] md:w-[400px] rounded-2xl shadow-lg"
         />
@@ -51,4 +51,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
