@@ -5,7 +5,11 @@ const Nav = () => {
     <nav className="flex flex-wrap items-center justify-between px-4 sm:px-8 py-4 bg-white shadow">
       {/* Logo */}
       <div className="p-2 sm:p-4">
-        <img src="/images/logo-long.svg" alt="Logo" className="h-8 sm:h-10" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/logo-long.svg`}
+          alt="Logo"
+          className="h-8 sm:h-10"
+        />
       </div>
       
       {/* Buttons */}

@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Logo + Tagline */}
         <div>
           <img
-            src="/images/logo-long.svg"
+            src="images/logo-long.svg"
             alt="Heyfood Logo"
             className="h-10 w-auto"
           />
@@ -71,7 +71,7 @@ const Footer = () => {
           {/* QR Code */}
           <div className="mt-6">
             <img
-              src="/images/download-qr.svg" 
+              src="images/download-qr.svg" 
               alt="QR Code"
               className="w-24 h-24"
             />
